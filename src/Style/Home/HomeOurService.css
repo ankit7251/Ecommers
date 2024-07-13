@@ -1,0 +1,121 @@
+.HomeOurService_Main_Container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--NavbarBgColor);
+}
+.HomeOurService_container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.HomeOurService_container p {
+  font-size: 1.2vw;
+}
+.HomeOurService_container h2 {
+  font-size: 1.8vw;
+}
+.HomeOurService_boxes_container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.HomeOurService_boxex {
+  height: 90%;
+  width: 26%;
+  background-color: var(--baseWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+.HomeOurService_Img_box {
+  height: 70%;
+  width: 90%;
+  object-fit: contain;
+  position: relative;
+  overflow: hidden;
+}
+.HomeOurService_Img_box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.HomeOurService_Title_box {
+  height: 30%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.HomeOurService_Title_box p:nth-child(1) {
+  font-size: 0.9vw;
+}
+.HomeOurService_Title_box p:nth-child(2) {
+  font-size: 1.2vw;
+}
+
+/* Hover */
+
+.HomeOurService_Img_box:hover .HomeOurService_Img_Hover_box {
+  right: 0;
+}
+
+.HomeOurService_Img_Hover_box {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.394);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  right: 100%;
+}
+.HomeOurService_Img_Hover_box button {
+  width: 60%;
+  height: 20%;
+  border: none;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 0.3rem;
+}
+.HomeOurService_Img_Hover_box button:hover {
+  background-color: var(--btnBgColor);
+  color: var(--baseWhite);
+  border: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .HomeOurService_Main_Container {
+    height: 30vh;
+  }
+    .HomeOurService_container p {
+        font-size: 3vw;
+    }
+    .HomeOurService_container h2 {
+        font-size: 5vw;
+    }
+    .HomeOurService_boxex{
+      width: 30%;
+    }
+    .HomeOurService_Title_box p:nth-child(1) {
+      font-size: 1.3vw;
+    }
+    .HomeOurService_Title_box p:nth-child(2) {
+      font-size: 1.8vw;
+    }
+  }
+

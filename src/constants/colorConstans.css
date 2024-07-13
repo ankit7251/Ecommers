@@ -1,0 +1,11 @@
+:root{
+   --baseWhite : #fff;
+   --baseBlack : #000;
+   --NavbarBgColor : rgb(223, 216, 255);
+   --btnBgColor : rgb(85, 85, 211);
+   --footerBgColor : rgb(0, 0, 52);
+   --baseGray : gray;
+   --baseRed : red;
+   --baseGreen : green;
+}
+

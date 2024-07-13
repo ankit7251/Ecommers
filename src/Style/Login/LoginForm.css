@@ -1,0 +1,125 @@
+/* create account style */
+.CreateAccount_main_container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CreateAccount_container {
+  height: 80%;
+  width: 50%;
+  background-color: var(--NavbarBgColor);
+  border-radius: 1rem;
+}
+.CreateAccount_container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.CreateAccount_container form h1 {
+  font-size: 2vw;
+}
+.CreateAccount_container form button {
+  width: 30%;
+  height: 10%;
+  padding: 0 2%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--baseBlack);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 1.2vw;
+}
+.CreateAccount_container form button:hover {
+  background-color: var(--btnBgColor);
+  color: var(--baseWhite);
+  border: none;
+  font-weight: bold;
+}
+
+.CreateAccount_container_2input {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8%;
+}
+.CreateAccount_container_2input input {
+  width: 45%;
+  height: 100%;
+  padding: 0 2%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--baseBlack);
+  font-size: 1.2vw;
+}
+.CreateAccount_container_input {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8%;
+}
+.CreateAccount_container_input input {
+  width: 100%;
+  height: 100%;
+  padding: 0 2%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--baseBlack);
+  font-size: 1.2vw;
+}
+.CreateAccount_container form p {
+  color: var(--btnBgColor);
+  cursor: pointer;
+}
+.rotate {
+  transition: transform 0.5s ease;
+  transform: rotateX(180deg);
+}
+
+.inputShowPassword {
+  cursor: pointer;
+  position: absolute;
+  right: 11%;
+}
+.inputShowPassword,
+.inputShowPassword2 {
+  font-size: 1.5vw;
+  color: var(--baseGray);
+}
+.inputShowPassword2 {
+  cursor: pointer;
+  position: absolute;
+  left: 41%;
+}
+
+@media screen and (max-width: 768px) {
+  .CreateAccount_main_container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .CreateAccount_container {
+    width: 90%;
+  }
+  .CreateAccount_container form h1 {
+    font-size: 5vw;
+  }
+  .CreateAccount_container_input input {
+    font-size: 3vw;
+  }
+  .CreateAccount_container_2input input {
+    font-size: 3vw;
+  }
+  .inputShowPassword,
+  .inputShowPassword2 {
+    font-size: 3vw;
+  }
+  .CreateAccount_container form button {
+    font-size: vw;
+  }
+}

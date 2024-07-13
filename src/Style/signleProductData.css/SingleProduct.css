@@ -1,0 +1,132 @@
+.SingleProduct_main_conatainer {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SingleProduct_container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SIngleProduct_container_image {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SIngleProduct_container_image_img {
+  width: 100%;
+  height: 60%;
+}
+.SIngleProduct_container_image_img img {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+.SIngleProduct_container_content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.SingleProduct_delevery {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--baseBlack);
+  padding-bottom: 2%;
+}
+.SingleProduct_delevery_innerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.SingleProduct_delevery_innerBox span {
+  font-size: 2vw;
+  color: var(--btnColor);
+}
+.SingleProduct_delevery_prodectOrder {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  flex-direction: column;
+  height: 25%;
+}
+.SingleProduct_delevery_prodectOrder button{
+  width: 22%;
+  height: 6vh;
+  font-size: 1vw;
+  background-color: var(--btnBgColor);
+  color: var(--baseWhite);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.SingleProduct_delevery_prodectOrder_box {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.SingleProduct_delevery_prodectOrder_box p {
+  color: var(--baseGray);
+}
+.SingleProduct_delevery_prodectOrder_box button {
+  width: 4vw;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 2vw;
+  cursor: pointer;
+  height: 100%;
+  /* background: transparent; */
+}
+.SIngleProduct_container_content p {
+  font-size: 1.2vw;
+}
+.SingleProduct_delevery_innerBox p {
+  font-size: 1.2vw;
+}
+@media screen and (max-width: 768px) {
+  .SingleProduct_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .SIngleProduct_container_image {
+    width: 40%;
+    height: 100%;
+  }
+  .SIngleProduct_container_content {
+    width: 90%;
+  }
+  .SIngleProduct_container_content h2 {
+    font-size: 4vw;
+  }
+  .SingleProduct_delevery_prodectOrder button {
+    height: 30%;
+    font-size: 1.7vw;
+  }
+  .SIngleProduct_container_content p {
+    font-size: 2vw;
+  }
+  .SingleProduct_delevery_prodectOrder_box button {
+    width: 10vw;
+    height: 2.5vh;
+  }
+  .SingleProduct_delevery_prodectOrder_box p{
+    font-size: 3vw;
+  }
+
+}

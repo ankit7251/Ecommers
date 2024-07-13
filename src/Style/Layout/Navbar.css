@@ -1,0 +1,170 @@
+.Navbar_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background: rgb(223, 216, 255);
+  padding: 0% 4%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar_Title_box {
+  height: 80%;
+  padding: 0 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  border: 0.2rem solid var(--baseBlack);
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar_Title_box span {
+  background: var(--btnBgColor);
+  color: var(--baseWhite);
+  margin-right: 0.5rem;
+}
+.Navbar_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Navbar_link ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.Navbar_link ul li {
+  cursor: pointer;
+  font-size: 1.3vw;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.Navbar_link ul li a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--baseBlack);
+}
+.Navbar_link ul li {
+  border-radius: 0.3rem;
+  position: relative;
+  font-weight: 500;
+  gap: 0.3rem;
+}
+.Navbar_link ul li:hover {
+  background: var(--btnBgColor);
+  color: var(--baseWhite);
+}
+.Navbar_link ul li:hover a {
+  color: var(--baseWhite);
+}
+.Navbar_link ul li sup {
+  position: absolute;
+  top: 0.2rem;
+  padding: 0.05rem 0.3rem;
+  right: -0.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btnBgColor);
+  color: var(--baseWhite);
+}
+.navbar_mobile_navbarOpenLink {
+  display: none;
+}
+.active {
+  background-color: var(--btnBgColor);
+}
+@media screen and (max-width: 768px) {
+  .Navbar_container {
+    height: 5vh;
+  }
+  .navbar_mobile_navbarOpen {
+    position: absolute;
+    top: 5vh;
+    height: 75vh;
+    width: 100%;
+    background: var(--NavbarBgColor);
+    display: none;
+    left: 0;
+    z-index: 1000;
+  }
+  .navbar_mobile_navbarOpen ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar_mobile_navbarOpen ul li {
+    flex-direction: column;
+    font-size: 4vw;
+    width: 100%;
+    background-color: transparent;
+    color: var(--baseBlack);
+    position: relative;
+  }
+  .navbar_mobile_navbarOpen ul li:hover {
+    color: var(--baseWhite);
+  }
+  .navbar_mobile_navbarOpen ul li sup {
+    top: 30%;
+    right: 43%;
+  }
+  .navbar_login {
+    background-color: transparent;
+  }
+  .navbar_mobile_navbarOpenLink {
+    cursor: pointer;
+    display: block;
+  }
+
+  .Navbar_link {
+    position: absolute;
+    top: 5vh;
+    height: 75vh;
+    width: 100%;
+    background-color: var(--NavbarBgColor);
+    left: 0;
+  }
+  .Navbar_link ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .Navbar_link ul li {
+    flex-direction: column;
+    font-size: 4vw;
+    width: 100%;
+    background-color: transparent;
+    color: var(--baseBlack);
+    position: relative;
+  }
+  .Navbar_link ul li:hover {
+    color: var(--baseWhite);
+  }
+  .Navbar_link ul li sup {
+    top: 30%;
+    right: 43%;
+  }
+}

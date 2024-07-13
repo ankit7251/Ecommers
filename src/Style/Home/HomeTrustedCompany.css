@@ -1,0 +1,60 @@
+.HomeTrustedCompany_main_container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomeTrustedCompany_main {
+  background: var(--NavbarBgColor);
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8%;
+}
+
+.HomeTrustedCompany_main_details {
+  text-align: center;
+  width: 100%;
+  font-size: 1.3vw;
+}
+.HomeTrustedCompany_Logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.HomeTrustedCompany_main_details p {
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+.HomeTrustedCompany_Logo span {
+  font-size: 3vw;
+  color: var(--baseGray);
+}
+
+@media screen and (max-width: 768px) {
+  .HomeTrustedCompany_main_container {
+    margin-top: 2%;
+    height: auto;
+  }
+  .HomeTrustedCompany_main_details p {
+    margin-bottom: 8%;
+    margin-top: 8%;
+    font-size: 3vw;
+  }
+  .HomeTrustedCompany_main {
+    padding: 2% 0;
+  }
+  .HomeTrustedCompany_Logo {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .HomeTrustedCompany_Logo span {
+    font-size: 5vw;
+    color: var(--baseGray);
+  }
+}

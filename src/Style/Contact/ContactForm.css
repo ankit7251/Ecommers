@@ -1,0 +1,64 @@
+.ContactForm_Main_conatainer {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContactForm_Main {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContactForm_Main form {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.ContactForm_Main form input {
+  width: 90%;
+  height: 10%;
+  padding: 0% 2%;
+}
+.ContactForm_Main form textarea {
+  width: 90%;
+  height: 25%;
+  padding: 0% 2%;
+}
+.ContactForm_Main form button {
+  width: 25%;
+  height: 13%;
+  font-weight: bold;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.ContactForm_Main form button:hover {
+  background-color: var(--btnBgColor);
+  color: var(--baseWhite);
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .ContactForm_Main_conatainer {
+    height: 50vh;
+  }
+  .ContactForm_Main form {
+    width: 100%;
+  }
+  .ContactForm_Main form button {
+    width: 25%;
+    height: 10%;
+    font-weight: bold;
+    font-size: 3vw;
+    background-color: var(--btnBgColor);
+    border: none;
+    color: var(--baseWhite);
+    cursor: pointer;
+  }
+}

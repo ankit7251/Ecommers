@@ -1,0 +1,94 @@
+.HomeAboutSection_main_container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomeAboutSection_main {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.HomeAboutSection_data {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4%;
+}
+.HomeAboutSection_data h1{
+  font-size: 2.5vw;
+}
+.HomeAboutSection_data p {
+  font-size: 1.4vw;
+}
+.HomeAboutSection_data button {
+  width: 20%;
+  height: 10%;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.HomeAboutSection_data button:hover {
+  background-color: var(--btnBgColor);
+  color: var(--baseWhite);
+  border: none;
+}
+
+/* image box desion */
+
+.HomeAboutSection_Image {
+  width: 45%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  transition: ease-in-out 0.5s;
+}
+.HomeAboutSection_Image:hover{
+  transform: scale(1.1);
+}
+
+.HomeAboutSection_Image_div {
+  height: 80%;
+  width: 90%;
+  background: url("../../Asset/Home/shoping.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.HomeAboutSection_Image_background_desion {
+  width: 50%;
+  height: 55%;
+  background-color: var(--btnBgColor);
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .HomeAboutSection_main_container {
+        height: 60vh;
+      }
+  .HomeAboutSection_main {
+    flex-direction: column;
+  }
+  .HomeAboutSection_data {
+    width: 100%;
+  }
+  .HomeAboutSection_Image {
+    width: 100%;
+  }
+  .HomeAboutSection_data p {
+    font-size: 3vw;
+  }
+}
